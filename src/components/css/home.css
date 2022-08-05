@@ -1,0 +1,119 @@
+:root {
+    --dark-blue: hsl(209, 23%, 22%);
+    --very-dark-blue:hsl(207, 26%, 17%);
+    --very-dark-blue-text: hsl(200, 15%, 8%);
+    --dark-gray : hsl(0, 0%, 52%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+  
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,600;1,200;1,700&display=swap');
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif; 
+  }
+
+
+
+
+#gen-container {
+    /* background-color: #0c192c; */
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+}
+
+.zoom-container {
+    text-align: center;
+    display: flex;
+    justify-content: center ;
+    padding-top: 10rem;
+}
+
+
+.zoom-container .zoom-hero {
+    padding-right: 70px;
+}
+
+.zoom-container .zoom-hero img {
+    width: 100%;
+    height: 100%;
+    transition: background 1s, transform 1s;
+}
+
+.zoom-container .zoom-hero img:hover {
+    transform: scale(1.2);
+}
+
+
+.zoom-container .zoom-item {
+    text-align: justify;
+    padding: 0px 30px;
+}
+
+.zoom-container .zoom-item h1 {
+    color: dodgerblue;
+    font-weight: bolder;
+}
+
+.zoom-container .zoom-item span {
+    padding-left: 30px;
+    text-align: justify;
+    /* color: white; */
+    font-size: 20px;
+}
+
+.zoom-container button {
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.zoom-buttons h2 {
+    /* color: white; */
+    font-weight: bold;
+}
+
+@media screen and (max-width:650px) {
+   .zoom-hero {
+    padding-left: 17%;
+   }
+
+   .zoom-hero img {
+    margin-top: -6em;
+    border-radius: 10px;
+   }
+    
+}
+
+@media screen and (max-width:650px) {
+    .zoom-item h1 {
+        text-align: center;
+        margin-top: 6%;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+}
+
+@media screen and (max-width:650px) {
+    .zoom-buttons h2 {
+        text-align: center;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 30px;
+    }
+    
+}
+
+
