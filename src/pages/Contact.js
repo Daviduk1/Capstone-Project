@@ -40,7 +40,7 @@ const Contact = () => {
   
         <form onSubmit={handleSubmit} style={{height: '230px'}}>
           
-            <input className='mt-4' type="text" placeholder=' Enter your contact' name='usercontact'
+            <input className='mt-4' type="text" placeholder=' Enter your username' name='usercontact'
             value={formValues.usercontact} onChange={handleChange} />
           
           <p style={{color:'red', paddingTop: '3px'}}>{formError.usercontact}</p>
