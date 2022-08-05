@@ -36,7 +36,7 @@ const Contact = () => {
     return error
   }
   return (
-    <div className='form-container' style={{padding: '20px 20px'}}> 
+    <div className='form-container' style={{padding: '20px 20px', marginTop: '-10rem'}}> 
   
         <form onSubmit={handleSubmit} style={{height: '230px'}}>
           
